@@ -1,15 +1,16 @@
 import React from 'react'
+import { getUser } from '../services/auth'
 
-const profile = () => {
+const Profile = () => {
   return (
     <>
       <h1>Your Profile</h1>
       <ul>
-        <li>Name: Your name will appear here</li>
-        <li>E-mail: And here goes the mail</li>
+        <li>Name: {getUser().name}</li>
+        <li>E-mail: {getUser().email}</li>
       </ul>
     </>
   )
 }
 
-export default profile
+export default Profile
