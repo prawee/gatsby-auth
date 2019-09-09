@@ -23,7 +23,13 @@ class Login extends React.Component {
     return (
       <>
         <h1>Log in</h1>
-        <form>
+        <form
+          method="post"
+          onSubmit={event => {
+            this.handleSubmit(event)
+            navigate(`/app/profile`)
+          }}
+        >
           <label>
             Username
             <input 
