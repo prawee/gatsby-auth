@@ -35,6 +35,7 @@ class Login extends React.Component {
             <input 
               type="text" 
               name="username" 
+              autoComplete="true"
               onChange={this.handleUpdate} 
             />
           </label>
@@ -43,6 +44,7 @@ class Login extends React.Component {
             <input
               type="password"
               name="password"
+              autoComplete="true"
               onChange={this.handleUpdate}
             />
           </label>
