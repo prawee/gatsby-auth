@@ -8,7 +8,7 @@ export default () => <Layout>
   <p>
     {isLoggedIn() ? (
       <>
-        You are logged in, so check your(" ")
+        You are logged in, so check your{" "}
         <Link to="/app/profile">profile</Link>
       </>
     ) : (
